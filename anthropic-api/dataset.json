@@ -1,0 +1,17 @@
+[
+  {
+    "task": "Extract AWS S3 bucket names from CloudFormation template resource names using a pattern that matches 'AWS::S3::Bucket' resource definitions",
+    "format": "regex",
+    "solution_criteria": "Regex should accurately match S3 bucket resource type declarations and capture the logical resource ID. Should handle variations in whitespace and quotes."
+  },
+  {
+    "task": "Parse an AWS IAM policy JSON string and extract all actions (Action field) that contain 's3:*' or 's3:GetObject' permissions",
+    "format": "python",
+    "solution_criteria": "Function should parse JSON policy, iterate through statements, and return a list of matching actions. Should handle both string and list formats for the Action field."
+  },
+  {
+    "task": "Create a JSON configuration object for an AWS Lambda function that specifies runtime as 'python3.11', timeout of 60 seconds, memory of 512 MB, and environment variables for AWS_REGION and LOG_LEVEL",
+    "format": "json",
+    "solution_criteria": "JSON should be valid and include all required Lambda configuration fields with correct data types. Environment variables should be properly nested."
+  }
+]
