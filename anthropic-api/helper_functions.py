@@ -27,10 +27,11 @@ def add_assistant_message(messages: list[MessageParam], text: str) -> None:
 
 def chat(
     messages: list[MessageParam],
-    max_tokens: int = 100,
+    max_tokens: int = 1000,
     model: str = DEFAULT_MODEL,
     temperature: float = 0.6,
-    system: str = None,
+    system: str | None = None,
+    stop_sequences: list[str] | None = None,
 ) -> str:
     params = {
         "model": model,
@@ -40,6 +41,8 @@ def chat(
     }
     if system is not None:
         params["system"] = system
+    if stop_sequences is not None:
+        params["stop_sequences"] = stop_sequences
     try:
         # ** means to unpack the params dict into keyword arguments
         message = client.messages.create(**params)
