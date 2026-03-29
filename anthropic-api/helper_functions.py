@@ -27,15 +27,21 @@ def add_assistant_message(messages: list[MessageParam], text: str) -> None:
 
 def chat(
     messages: list[MessageParam],
-    max_tokens: int = 1000,
+    max_tokens: int = 100,
     model: str = DEFAULT_MODEL,
+    system: str = None,
 ) -> str:
+    params = {
+        "model": model,
+        "max_tokens": max_tokens,
+        "messages": messages,
+    }
+    if system is not None:
+        params["system"] = system
     try:
-        message = client.messages.create(
-            model=model,
-            max_tokens=max_tokens,
-            messages=messages,
-        )
+        # ** means to unpack the params dict into keyword arguments
+        message = client.messages.create(**params)
+
         first_block: Any = message.content[0]
         return str(getattr(first_block, "text", ""))
 
