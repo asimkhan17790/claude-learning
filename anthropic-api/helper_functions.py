@@ -29,12 +29,14 @@ def chat(
     messages: list[MessageParam],
     max_tokens: int = 100,
     model: str = DEFAULT_MODEL,
+    temperature: float = 0.6,
     system: str = None,
 ) -> str:
     params = {
         "model": model,
         "max_tokens": max_tokens,
         "messages": messages,
+        "temperature": temperature,
     }
     if system is not None:
         params["system"] = system
