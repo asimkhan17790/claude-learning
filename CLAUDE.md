@@ -17,7 +17,9 @@ claude-learning/
 │   ├── streaming-responses.ipynb # Real-time streaming with the SDK
 │   ├── structured_data.ipynb     # Stop sequences for structured output (JSON, bash)
 │   ├── structured_data_exercise.ipynb  # AWS CLI / EventBridge structured output exercise
-│   └── prompt_evaluation.ipynb   # Prompt eval pipeline with scoring
+│   ├── prompt_evaluation.ipynb   # Prompt eval pipeline with scoring
+│   └── prompt_engineering/
+│       └── prompting.ipynb       # PromptEvaluator class — dataset gen, concurrent eval, HTML reports
 ├── README.md
 └── CLAUDE.md
 ```

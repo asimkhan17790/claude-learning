@@ -15,6 +15,7 @@ All notebooks are in the `anthropic-api/` directory.
 | `structured_data.ipynb` | Structured data extraction using stop sequences to enforce specific output formats (JSON, bash commands, etc.) for reliable parsing. |
 | `structured_data_exercise.ipynb` | Exercise generating AWS CLI commands and EventBridge rules with stop sequences to control output format. |
 | `prompt_evaluation.ipynb` | Prompt evaluation pipeline — generates test cases for AWS tasks, runs prompts, and grades responses via syntax validation and model-based scoring. |
+| `prompt_engineering/prompting.ipynb` | Advanced prompt engineering toolkit — `PromptEvaluator` class with concurrent dataset generation, model-graded scoring, and HTML report output. Includes an end-to-end athlete meal plan evaluation example. |
 
 ## Getting Started
 
