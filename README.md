@@ -16,6 +16,17 @@ All notebooks are in the `anthropic-api/` directory.
 | `structured_data_exercise.ipynb` | Exercise generating AWS CLI commands and EventBridge rules with stop sequences to control output format. |
 | `prompt_evaluation.ipynb` | Prompt evaluation pipeline — generates test cases for AWS tasks, runs prompts, and grades responses via syntax validation and model-based scoring. |
 | `prompt_engineering/prompting.ipynb` | Advanced prompt engineering toolkit — `PromptEvaluator` class with concurrent dataset generation, model-graded scoring, and HTML report output. Includes an end-to-end athlete meal plan evaluation example. |
+| `features_of_claude/001_thinking.ipynb` | Extended thinking / reasoning mode — enabling and interpreting Claude's step-by-step reasoning. |
+| `features_of_claude/002_images.ipynb` | Vision and image understanding — sending images to Claude and processing visual content. |
+| `retrieval_augmented_generation/001_chunking.ipynb` | Document chunking strategies for preparing text for retrieval pipelines. |
+| `retrieval_augmented_generation/002_embeddings.ipynb` | Generating and working with text embeddings. |
+| `retrieval_augmented_generation/003_vectordb.ipynb` | Vector database integration for semantic search. |
+| `retrieval_augmented_generation/004_bm25.ipynb` | BM25 keyword-based retrieval. |
+| `retrieval_augmented_generation/005_hybrid.ipynb` | Hybrid search combining vector and BM25 retrieval. |
+| `tools_use/tools_tutorial.ipynb` | Introduction to Claude tool use — defining and calling tools. |
+| `tools_use/003_tool_streaming.ipynb` | Streaming responses that include tool calls. |
+| `tools_use/005_text_editor_tool.ipynb` | Using Claude's built-in text editor tool. |
+| `tools_use/006_web_search.ipynb` | Integrating web search as a tool for Claude. |
 
 ## Getting Started
 
